@@ -1,11 +1,11 @@
 const odbc = require('odbc');
 
-// Connection string to test
-const connectionString = "Driver={ODBC Driver 17 for SQL Server};Server=localhost;Database=ERPYamato;Trusted_Connection=Yes;";
+// Connection string to test - REMOVE the Trusted_Connection=Yes part
+const connectionString = "Driver={SQL Server};Server=F6GVKN3\\LYSERVER;Database=ERPYamato;User ID=sa;Password=Agreenzone@123;";
 
 console.log("ODBC Connection Test Utility");
 console.log("============================");
-console.log(`Testing connection with: ${connectionString}`);
+console.log(`Testing connection with: ${connectionString.replace(/Password=.*?;/i, "Password=******;")}`);
 console.log("ODBC Version:", odbc.version || "Unknown");
 
 async function testConnection() {
