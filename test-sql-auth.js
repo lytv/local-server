@@ -1,7 +1,7 @@
 const odbc = require('odbc');
 
 // Connection string with SQL Server authentication
-const connectionString = "Driver={ODBC Driver 17 for SQL Server};Server=localhost;Database=ERPYamato;UID=sa;PWD=your_password_here;";
+const connectionString = "Driver={SQL Server};Server=F6GVKN3\\LYSERVER;Database=ERPYamato;UID=sa;PWD=Agreenzone@123;";
 
 console.log("SQL Server Authentication Test");
 console.log("==============================");
